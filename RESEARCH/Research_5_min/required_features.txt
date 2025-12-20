@@ -1,0 +1,3 @@
+BSE
+- oscillator - RSI, MACD , supertrend and moving average cross over
+- trend indicators - 

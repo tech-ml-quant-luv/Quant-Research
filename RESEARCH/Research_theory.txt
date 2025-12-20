@@ -1,0 +1,43 @@
+## Next Steps to Try
+
+**Validation & Testing:**
+1. Combinatorial Purged Cross-Validation (CPCV)
+2. Embargo period between train/test to prevent leakage
+3. Deflated Sharpe Ratio calculation
+4. Probability of backtest overfitting (PBO)
+5. Monte Carlo permutation tests
+
+**Feature Engineering:**
+6. Fractionally differentiated features (preserve memory, achieve stationarity)
+7. Triple-barrier labeling (meta-labeling framework)
+8. CUSUM filter for structural breaks
+9. Information-driven bars (volume, dollar, tick bars instead of time)
+10. Microstructural features (Kyle's lambda, VPIN, Roll measure)
+
+**Sampling & Weighting:**
+11. Sample weights based on uniqueness (de-correlate overlapping labels)
+12. Sequential bootstrapping (preserve time-series properties)
+13. Time-decay weighting for recent observations
+
+**Model Improvements:**
+14. Meta-labeling (predict size given side, not direction)
+15. Multi-class with magnitude (your 5-class idea)
+16. Ensemble of models from different time regimes
+17. Bet sizing based on prediction confidence
+
+**Risk & Position Management:**
+18. Asymmetric risk-reward entries (1:3 ratio)
+19. Dynamic position sizing (Kelly Criterion, bet sizing algorithm)
+20. Concurrency limits (max correlated positions)
+
+**Feature Importance & Selection:**
+21. Mean Decrease Impurity (MDI) with correct implementation
+22. Mean Decrease Accuracy (MDA)
+23. Single Feature Importance (SFI)
+24. Clustered Feature Importance
+25. PCA on feature space
+
+**Target/Label Engineering:**
+26. Fixed-time horizon vs. triple barrier
+27. Trend-scanning labels
+28. Volatility-adjusted returns as target
