@@ -1,3 +1,21 @@
 /machine_learning_training
 /RESEARCH/data
 /quantresearch
+
+# ===== Data & Databases =====
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.zip
+
+# Raw market data
+Data/
+RESEARCH/
+RESEARCH_2/
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.env
+.venv
