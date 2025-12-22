@@ -1,0 +1,36 @@
+X = df[[
+    "buying_pressure",
+    "close_position",
+    "close_5ma_diff_pct",
+    "high_close_diff",
+    "body_size",
+    "close_log_return_lag1",
+    "close_log_return_lag2",
+    "return_4",
+    "return_13",
+    "return_26",
+    "volume_ratio",
+    "macd_norm",
+    "rsi_14"
+]]
+
+
+# y# Percentile-based classes
+p10 = df['shifted_log_return'].quantile(0.10)  # -0.0041
+p30 = df['shifted_log_return'].quantile(0.30)  # -0.0013
+p70 = df['shifted_log_return'].quantile(0.70)  # 0.0010
+p90 = df['shifted_log_return'].quantile(0.90)  # 0.0042
+
+def label_class(ret):
+    if ret < p10: return 4      # Big Down
+    elif ret < p30: return 2    # Small Down
+    elif ret < p70: return 0    # Neutral
+    elif ret < p90: return 1    # Small Up
+    else: return 3              # Big Up
+
+df['target'] = df['shifted_log_return'].apply(label_class)
+
+print(df['target'].value_counts().sort_index())
+
+
+- Cluster stocks with similar features
