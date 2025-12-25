@@ -11,8 +11,6 @@
 
 # Raw market data
 Data/
-RESEARCH/
-RESEARCH_2/
 
 # ===== Python =====
 __pycache__/
