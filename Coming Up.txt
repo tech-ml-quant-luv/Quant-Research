@@ -1,0 +1,2 @@
+Step 1 - Train till 2024 December and Test till 2025 December
+Step 2 - Use the same above data for walk forward validation
